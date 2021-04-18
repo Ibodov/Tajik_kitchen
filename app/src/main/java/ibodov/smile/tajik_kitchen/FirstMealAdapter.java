@@ -16,7 +16,7 @@ public class FirstMealAdapter extends RecyclerView.Adapter<FirstMealAdapter.Firs
 // 4. Создаем конструктор для нашего адаптера:
     public FirstMealAdapter(FirstMeals[] firstMeals) {
 
-        local_firstMeals = new FirstMeals[local_firstMeals.length];
+        local_firstMeals = new FirstMeals[firstMeals.length];
 
         for (int i = 0; i<firstMeals.length; i++) { // этот массив полный
             local_firstMeals[i] = firstMeals[i]; //заполняем local_firstMeals из firstMeals
@@ -38,7 +38,7 @@ public class FirstMealAdapter extends RecyclerView.Adapter<FirstMealAdapter.Firs
     @Override
     public void onBindViewHolder(FirstMealViewHolder holder, int position) {
     // 6. реализуем метод / переоопределение
-        holder.textView.setText(local_firstMeals[position].getName());
+        holder.textView.setText(local_firstMeals[position].getName() + " ");
 
     }
 
@@ -54,7 +54,7 @@ public class FirstMealAdapter extends RecyclerView.Adapter<FirstMealAdapter.Firs
 
         TextView textView;
 
-    public FirstMealViewHolder(@NonNull View itemView) {
+    public FirstMealViewHolder(View itemView) {
         super(itemView);
         textView = itemView.findViewById(R.id.textView);
     }

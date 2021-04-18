@@ -7,18 +7,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-public class First_meal extends AppCompatActivity {
+public class First_mealActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     FirstMealAdapter adapter;
 
     //3. массив с данными о первых блюд
-    FirstMeals[] firstMeals = new FirstMeals[3];
+    FirstMeals[] firstMeals = new FirstMeals[4];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_meal);
+
+        //Заполняем массив
+        setFirstMealsArray();
 
         //1. инициализируем recyclerview список
         initRecyclerView();
@@ -46,6 +49,8 @@ public class First_meal extends AppCompatActivity {
         adapter = new FirstMealAdapter(firstMeals); //передаем наг массив
 
         recyclerView.setLayoutManager(linearLayoutManager); // устанавливаем в recyclerView наш лейаут
+
+        recyclerView.addItemDecoration(itemDecoration);
 
         recyclerView.setAdapter(adapter);//в recyclerView устанавливаем наш адаптер
 
