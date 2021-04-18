@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Tajik_kitchen</string>
+    <string name="first_meal">Первые блюда</string>
+    <string name="second_meal">Вторые блюда</string>
+    <string name="salads">Салаты</string>
 </resources>

@@ -6,13 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+
+
+<!--
+    <ImageButton
+        android:id="@+id/first_meal"
+        android:layout_width="298dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="440dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/first_meal_icon"
+        />
+
+    <ImageButton
+        android:id="@+id/second_meal"
+        android:layout_width="298dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_meal"
+        app:srcCompat="@drawable/second_meal_icon" />
+-->
+    <Button
+        android:id="@+id/first_meal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/first_meal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/second_meal"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/second_meal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_meal" />
+
+    <Button
+        android:id="@+id/salads"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/salads"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_meal" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
