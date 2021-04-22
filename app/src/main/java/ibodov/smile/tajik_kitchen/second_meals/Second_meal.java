@@ -1,8 +1,10 @@
-package ibodov.smile.tajik_kitchen;
+package ibodov.smile.tajik_kitchen.second_meals;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import ibodov.smile.tajik_kitchen.R;
 
 public class Second_meal extends AppCompatActivity {
 

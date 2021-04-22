@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import ibodov.smile.tajik_kitchen.first_meals.First_mealActivity;
+import ibodov.smile.tajik_kitchen.second_meals.Second_meal;
+
 public class MainActivity extends AppCompatActivity {
 
 //    ImageButton firstMeal;
