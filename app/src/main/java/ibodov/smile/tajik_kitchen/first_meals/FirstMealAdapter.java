@@ -1,5 +1,6 @@
 package ibodov.smile.tajik_kitchen.first_meals;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,9 +24,6 @@ public class FirstMealAdapter extends RecyclerView.Adapter<FirstMealAdapter.Firs
 
 // 4. Создаем конструктор для нашего адаптера:
     public FirstMealAdapter(FirstMeals[] firstMeals, OnItemClickListener listener) {
-
-
-
         local_firstMeals = new FirstMeals[firstMeals.length];
         localListener = listener;
 
@@ -51,6 +49,9 @@ public class FirstMealAdapter extends RecyclerView.Adapter<FirstMealAdapter.Firs
     // 6. реализуем метод / переоопределение
         holder.textView.setText(local_firstMeals[position].getName() + " ");
 
+        //  реализуем метод / переоопределение для картинки в RecyclerView
+        holder.imageView.setImageResource(local_firstMeals[position].getImageId());
+        Log.i("TAG", "onBindViewHolder: local_firstMeals image id: " +local_firstMeals[position].getImageId() );
     }
 
     @Override

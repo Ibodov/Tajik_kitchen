@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".first_meals.AboutFirstMeals">
-<!--
+
     <ImageView
         android:id="@+id/about_icon"
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/first_meal_icon" />
--->
+
     <TextView
         android:id="@+id/name_firstMeal"
         android:layout_width="wrap_content"

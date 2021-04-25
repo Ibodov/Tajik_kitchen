@@ -37,7 +37,7 @@ public class First_mealActivity extends AppCompatActivity implements FirstMealAd
         firstMeals[0] = new FirstMeals(1, "Шурбо",  R.drawable.first_meal_icon, "Хуроки бехтарин");
         firstMeals[1] = new FirstMeals(2, "Мастоба", R.drawable.first_meal_icon, "Хуроки бехтарин2");
         firstMeals[2] = new FirstMeals(3, "Хом Шурбо", R.drawable.avatar, "Хуроки бехтарин3");
-        firstMeals[3] = new FirstMeals(4, "Сиёх-алаф", R.drawable.second_meal_icon, "Хуроки бехтарин4");
+        firstMeals[3] = new FirstMeals(4, "Сиёх-алаф", R.drawable.avatar, "Хуроки бехтарин4");
 
     }
 
@@ -83,10 +83,8 @@ public class First_mealActivity extends AppCompatActivity implements FirstMealAd
         intent.putExtra(AboutFirstMeals.FIRST_MEAL_ID, clickedFirstMeals.getId());
         intent.putExtra(AboutFirstMeals.NAME_FIRST_MEAL, clickedFirstMeals.getName());
         intent.putExtra(AboutFirstMeals.DESCRIPTION_FIRST_MEAL, clickedFirstMeals.getDescription());
-//        intent.putExtra(AboutFirstMeals.IMAGE_ID, clickedFirstMeals.getImageId());
-//        intent.putExtra(AboutContactActivity.CONTACT_NAME, clickedContact.getName() + " " + clickedContact.getLastName());
-//        intent.putExtra(AboutContactActivity.CONTACT_NUMBER, clickedContact.getNumber());
-//        intent.putExtra(AboutContactActivity.CONTACT_EMAIL, clickedContact.getMail());
+        intent.putExtra(AboutFirstMeals.IMAGE_ID, clickedFirstMeals.getImageId());
+
 
         startActivity(intent);
     }
