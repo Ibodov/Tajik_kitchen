@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import ibodov.smile.tajik_kitchen.R;
@@ -14,6 +15,8 @@ public class First_mealActivity extends AppCompatActivity implements FirstMealAd
 
     RecyclerView recyclerView;
     FirstMealAdapter adapter;
+    
+
 
     //3. массив с данными о первых блюд
    FirstMeals[] firstMeals = new FirstMeals[4];
@@ -34,10 +37,10 @@ public class First_mealActivity extends AppCompatActivity implements FirstMealAd
 
     //иниц массива в методе
     private void setFirstMealsArray(){
-        firstMeals[0] = new FirstMeals(1, "Шурбо",  R.drawable.first_meal_icon, "Хуроки бехтарин");
-        firstMeals[1] = new FirstMeals(2, "Мастоба", R.drawable.first_meal_icon, "Хуроки бехтарин2");
-        firstMeals[2] = new FirstMeals(3, "Хом Шурбо", R.drawable.avatar, "Хуроки бехтарин3");
-        firstMeals[3] = new FirstMeals(4, "Сиёх-алаф", R.drawable.avatar, "Хуроки бехтарин4");
+        firstMeals[0] = new FirstMeals(1, "Шурбо",  R.drawable.first_meal_icon, "Хуроки бехтарин" );
+        firstMeals[1] = new FirstMeals(2, "Мастоба", R.drawable.avatar, "Хуроки бехтарин2");
+        firstMeals[2] = new FirstMeals(3, "Хом Шурбо", R.drawable.first_meal_icon, "Хуроки бехтарин3");
+        firstMeals[3] = new FirstMeals(4, "Сиёх-алаф", R.drawable.second_meal_icon, "Хуроки бехтарин4");
 
     }
 
